@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			color:red !important;
+		}
+		.box{
+			color: green;
+			font-size: 60px;
+		}
+		#con{
+			color:blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- 默认样式优先级(0)<标签选择器(1)<类选择器(10)<id选择器(100)<行内样式(1000)<!important -->
+	<div class="box" id="con" style="font-size: 120px;color: pink">test</div>
+</body>
+</html>
