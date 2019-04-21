@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		/*.fa{
+			width: 498px;
+			height: 400px;
+			background-color: #232323;
+			border:1px solid #232323;
+		}
+
+		.son{
+			width: 200px;
+			height: 200px;
+			background-color: #eee;
+			margin-top: 20px;
+		}*/
+
+		.fa{
+			width: 500px;
+			height: 400px;
+			background-color: #232323;
+			overflow: hidden;
+		}
+
+		.son{
+			width: 200px;
+			height: 200px;
+			background-color: #eee;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	
+
+	外边距塌陷
+
+	嵌套的盒子，直接给子盒子设置垂直方向外边距的时候，会发生盒子塌陷
+
+	解决方法：
+	1.给父盒子设置边框(不推荐使用)
+
+	2.给父盒子设置 overflow:hidden
+	bfc 格式化上下文
+	<div class="fa">
+		<div class="son"></div>
+	</div>
+</body>
+</html>
